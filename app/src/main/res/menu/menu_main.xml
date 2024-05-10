@@ -5,13 +5,15 @@
     <item
         android:id="@+id/menu_favorite"
         android:orderInCategory="100"
-        app:showAsAction="always"
-        android:icon="@drawable/baseline_favorite_24"/>
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="Fav" />
 
     <item
         android:id="@+id/menu_logout"
         android:orderInCategory="100"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_launcher_foreground"/>
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Logout" />
 
 </menu>

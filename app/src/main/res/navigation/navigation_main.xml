@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_main"
-    app:startDestination="@id/notesFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/notesFragment"
@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_notesFragment_to_favoritesFragment"
             app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/favoritesFragment"
@@ -21,6 +24,14 @@
         tools:layout="@layout/fragment_favorites" >
         <action
             android:id="@+id/action_favoritesFragment_to_notesFragment2"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.flyyn.fragment.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_notesFragment"
             app:destination="@id/notesFragment" />
     </fragment>
 </navigation>
